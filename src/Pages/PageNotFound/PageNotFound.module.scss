@@ -1,0 +1,56 @@
+.mainNotFound {
+  background: #17002f;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  span {
+    position: absolute;
+    display: inline-block;
+    font-weight: 700;
+    width: 100%;
+    line-height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 45vw;
+    text-align: center;
+    letter-spacing: 4px;
+    z-index: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  img,
+  a {
+    position: relative;
+    z-index: 1;
+  }
+  img {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+  a {
+    padding: 20px 80px;
+    background: #73d677;
+    box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 11px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 27px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #212121;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s linear;
+    &:hover{
+        box-shadow: inset 0px -90px 0px rgba(0, 0, 0, 0.18);
+    }
+  }
+}

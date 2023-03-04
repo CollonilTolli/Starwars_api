@@ -1,0 +1,176 @@
+.langBtn {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  border-radius: 50%;
+  background-color: #f28f16;
+  padding: 10px;
+  width: 90px;
+  height: 90px;
+  transition: 0.2s linear;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    box-shadow: inset -5px -9px 0px rgba(0, 0, 0, 0.18);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.PeoplesPage {
+  min-height: calc(100vh - 100px);
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1150px;
+    height: 100%;
+    padding: 10px 12px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .language {
+      text-align: end;
+      width: 100%;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 41px;
+      text-align: center;
+      letter-spacing: 3px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 30px;
+    }
+    .filters{
+      display: flex;
+      width: 100%;
+      margin-bottom: 50px;
+      align-items: center;
+      gap: 15px;
+      @media (min-width: 540px){
+        width: calc(50% - 30px);
+      }
+      @media (min-width: 768px) {
+        width: 20%;
+      }
+      *{
+        white-space: nowrap;
+      }
+    }
+    .content {
+      width: 100%;
+    }
+    .items {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 45px 30px;
+      .item {
+        width: 100%;
+        @media (min-width: 540px){
+          width: calc(50% - 30px);
+        }
+        @media (min-width: 768px) {
+          width: calc(33% - 30px);
+        }
+        gap: 20px;
+        padding: 10px 25px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        filter: drop-shadow(4px 4px 4px rgba(33, 33, 33, 0.1));
+        box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.18);
+        display: flex;
+        flex-direction: column;
+        transition: .2s linear;
+        &:hover{
+          box-shadow: inset 0px -200px 0px rgba(0, 0, 0, 0.18);
+          cursor: pointer;
+        }
+        .name {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          color: #212121;
+          text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
+        }
+        .params {
+          display: flex;
+          gap: 15px;
+          & > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .circle {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #212121;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          .tag {
+            
+            box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
+            border-radius: 11px;
+            padding: 5px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+
+            color: #212121;
+          }
+          .blue{background: #07d6f2;}
+          .green{background: #73D677;}
+          .purple{background: #C956FF;}
+          .ornge{background: #FFB800;}
+          .yellow{background: #F5DB13;}
+          .d_none{display: none;}
+        }
+      }
+    }
+    .pagination{
+      width: 100%;
+      margin: 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      &_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: #f28f16;
+        box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.18);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .2s linear;
+        &:hover{
+          box-shadow: inset 0px -40px 0px rgba(0, 0, 0, 0.18);
+        }
+      }
+      .disabled{
+        background-color:#f0f0f0;
+        cursor: no-drop;
+      }
+    }
+  }
+}
+
