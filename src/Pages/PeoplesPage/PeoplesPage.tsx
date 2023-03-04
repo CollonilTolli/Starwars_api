@@ -109,7 +109,7 @@ const PeoplesPage = () => {
                             </div>
                             <div className={css.tags}>
                               {el.birth_year && (
-                                <div className={cn(css.tag, css.ornge)}>
+                                <div className={cn(css.tag, el.birth_year !== 'unknown' ? css.ornge : css.d_none)}>
                                   {el.birth_year}
                                 </div>
                               )}

@@ -140,7 +140,7 @@
           .purple{background: #C956FF;}
           .ornge{background: #FFB800;}
           .yellow{background: #F5DB13;}
-          .d_none{display: none;}
+          .d_none{background: transparent; font-size: 0; border: none;box-shadow: none;}
         }
       }
     }

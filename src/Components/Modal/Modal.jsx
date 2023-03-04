@@ -23,7 +23,7 @@ const Modal = ({ item, setOpenModal }) => {
             />
             <div className={css.tags}>
               {item.birth_year && (
-                <div className={cn(css.tag, css.ornge)}>{item.birth_year}</div>
+                <div className={cn(css.tag, item.birth_year !== 'unknown' ? css.ornge : css.d_none)}>{item.birth_year}</div>
               )}
               {item.gender && (
                 <div
